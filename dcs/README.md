@@ -90,6 +90,8 @@ Member function bar called with Sample class overload
 Destructor called
 ```
 
+[↑ Index ↑](#index)
+
 ## Operator Overload (Sobrecarga do operador)
 - A sobrecarga de operadores permite escrever membros de função que permitem que os operadores básicos sejam aplicados a objetos de classe (fonte: Beginning C++). Para fazer isso, você escreve uma função que redefine cada operador que deseja usar com sua classe
 - Operadores de grupos em C++:
@@ -207,6 +209,7 @@ Destructor called with value 42
 Destructor called with value 12
 Destructor called with value 30
 ```
+[↑ Index ↑](#index)
 
 ## Canonical classes
 - Forma canônica inclui:
@@ -311,10 +314,14 @@ Destructor called
 Destructor called
 ```
 
+[↑ Index ↑](#index)
+
 ## Copy constructor
 - **Se uma classe tiver membros de dados que sejam ponteiros, você deverá implementar o construtor de cópia**. Caso contrário, o construtor de cópia padrão copiará um objeto copiando os valores dos membros de dados, o que significa que apenas os endereços dos ponteiros serão copiados - não o que eles apontam.
 - O resultado serão dois ou mais objetos com membros apontando para o mesmo objeto. Uma alteração em um objeto apontado por um membro de dados de um objeto afetará todos os objetos duplicados.
 - Quando você cria um construtor de cópia, a duplicata pode depender do original.
+
+[↑ Index ↑](#index)
 
 ## Fixed point numbers
 - O uso do tipo de dados de ponto fixo é amplamente utilizado em processamento de sinais digitais (DSP) e aplicações de jogos, onde o desempenho às vezes é mais importante que a precisão. A aritmética de ponto fixo é muito mais rápida que a aritmética de ponto flutuante.
@@ -346,6 +353,8 @@ Exponent bits	                         | 8	            | 11
 Epsilon(**)	                             | 1.1929093e-7	    | 2.220446049250313e-16
 
 - Em resumo, o ponto fixo (fixed point) é uma forma simples, mas muito poderosa, de representar números fracionários no computador. Ao reutilizar todos os circuitos aritméticos inteiros de um computador, a aritmética de ponto fixo é muito mais rápida do que a aritmética de ponto flutuante. Esta é a razão pela qual está sendo usado em muitos aplicativos de jogos e DSP. Por outro lado, falta-lhe o alcance e a precisão que a representação de números de ponto flutuante oferece. Você, como programador ou projetista de circuitos, deve fazer a troca.
+
+[↑ Index ↑](#index)
 
 ## Resources
 - [operator overloading reference](https://en.cppreference.com/w/cpp/language/operators)

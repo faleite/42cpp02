@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: faaraujo <faaraujo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/05/22 18:48:56 by faaraujo          #+#    #+#              #
-#    Updated: 2024/06/14 16:03:14 by faaraujo         ###   ########.fr        #
+#    Created: 2024/06/14 20:38:06 by faaraujo          #+#    #+#              #
+#    Updated: 2024/06/14 20:38:22 by faaraujo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,9 @@
 #                                 VARIABLES                                    #
 #******************************************************************************#
 
-NAME = harlFilter
+NAME = Fixed
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g -fsanitize=address
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 # -g -fsanitize=address
 SRC = Fixed.cpp main.cpp
 OBJS = $(SRC:.cpp=.o)
 
@@ -63,7 +63,3 @@ YELLOW		= \033[1;33m
 BLUE		= \033[1;34m
 CYAN 		= \033[1;36m
 PURPLE 		= \033[0;35m
-
-# For object files:
-# .c.o:
-# 	$(CXX) -c $(CXXFLAGS) $< -o $@
