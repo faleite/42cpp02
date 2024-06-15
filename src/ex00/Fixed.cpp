@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 18:41:08 by faaraujo          #+#    #+#             */
-/*   Updated: 2024/06/14 20:43:22 by faaraujo         ###   ########.fr       */
+/*   Updated: 2024/06/15 17:03:52 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,6 @@ int	Fixed::getRawBits() const
 */
 void Fixed::setRawBits( int const raw )
 {
+	std::cout << "setRawBits member function called" << std::endl;
 	this->_fixedPointNumValue = raw;
 }

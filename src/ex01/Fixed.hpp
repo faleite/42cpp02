@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 18:37:26 by faaraujo          #+#    #+#             */
-/*   Updated: 2024/06/15 15:02:16 by faaraujo         ###   ########.fr       */
+/*   Updated: 2024/06/15 22:09:14 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define FIXED_HPP
 
 #include <iostream>
+#include <cmath>
+#include <climits>
 
 /**
  * @brief Representação de números de ponto fixo (Fixed point) do tipo <32, 8>,
@@ -43,13 +45,19 @@ class Fixed
 		int	_fixedPointNumValue;
 		static const int _numFractalBits = 8;
 	public:
-		Fixed( void ); /* Default Constructor */
-		Fixed( const Fixed &RefConstObjSrc ); /* Copy Constructor */
-		Fixed & operator=( const Fixed &RefConstObjSrc ); /* copy assignment operator overload. */
-		~Fixed(); /* Destructor */
+		Fixed();
+		Fixed( const int intNum );
+		Fixed( const float floatNum );
+		Fixed( const Fixed &copyObjSrc );
+		~Fixed();
+		Fixed &operator=( const Fixed &assignObjSrc );
 		
-		int	getRawBits( void ) const; /* Getter */
-		void setRawBits( int const raw ); /* Setter */
+		int	getRawBits( void ) const;
+		void setRawBits( int const raw );
+		float toFloat( void ) const;
+		int toInt( void ) const;
 };
+
+std::ostream &operator<<(std::ostream &out, const Fixed &numValue);
 
 #endif /* FIXED_HPP */
