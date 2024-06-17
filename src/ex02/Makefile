@@ -6,7 +6,7 @@
 #    By: faaraujo <faaraujo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/14 20:38:06 by faaraujo          #+#    #+#              #
-#    Updated: 2024/06/14 20:38:22 by faaraujo         ###   ########.fr        #
+#    Updated: 2024/06/17 16:59:48 by faaraujo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@
 
 NAME = Fixed
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 # -g -fsanitize=address
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC = Fixed.cpp main.cpp
 OBJS = $(SRC:.cpp=.o)
 

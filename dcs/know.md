@@ -41,3 +41,15 @@ Vamos decompor e explicar cada parte dessa declaração:
    - `std::ostream & o`: Referência ao fluxo de saída onde os dados serão enviados (como `std::cout` ou `std::ofstream`).
    - `Sample const & i`: Referência constante a um objeto da classe `Sample` que será inserido no fluxo.
 
+### Fixed 
+```cpp
+Fixed::Fixed( const int intNum )
+{
+	std::cout << "Int constructor called" << std::endl;
+	 if (intNum > (INT_MAX >> _numFractalBits) ||
+		intNum < (INT_MIN >> _numFractalBits))
+		std::cerr << "Number Outside Fixed point accuracy range" << std::endl;
+	else
+	   this->_fixedPointNumValue = (intNum << _numFractalBits);
+}
+```

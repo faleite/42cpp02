@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 18:41:08 by faaraujo          #+#    #+#             */
-/*   Updated: 2024/06/16 16:57:23 by faaraujo         ###   ########.fr       */
+/*   Updated: 2024/06/17 16:50:29 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,6 @@ Fixed::Fixed( const int intNum )
 {
 	// std::cout << "Int constructor called" << std::endl;
 	
-	// if (intNum > (INT_MAX >> _numFractalBits) ||
-	// 	intNum < (INT_MIN >> _numFractalBits))
-	// 	std::cerr << "Number Outside Fixed point accuracy range" << std::endl;
-	// else
 	this->_fixedPointNumValue = (intNum << _numFractalBits);
 }
 /**

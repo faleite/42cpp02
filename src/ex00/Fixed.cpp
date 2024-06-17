@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 18:41:08 by faaraujo          #+#    #+#             */
-/*   Updated: 2024/06/15 17:03:52 by faaraujo         ###   ########.fr       */
+/*   Updated: 2024/06/17 16:45:24 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ Fixed::Fixed( const Fixed &RefConstObjSrc )
 	std::cout << "Copy constructor called" << std::endl;
 	*this = RefConstObjSrc;
 }
+
 /**
  * @brief A copy assignment operator overload.
  * (Sobrecarga do operador de atribuição de cópia).
@@ -52,6 +53,7 @@ Fixed::~Fixed()
 {
 	std::cout << "Destructor called" << std::endl;
 }
+
 /**
  * @brief Getter the raw value of the fixed-point value.
  * @return that returns the raw value of the fixed-point value.
