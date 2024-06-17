@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 18:41:08 by faaraujo          #+#    #+#             */
-/*   Updated: 2024/06/17 16:45:24 by faaraujo         ###   ########.fr       */
+/*   Updated: 2024/06/17 17:38:00 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ Fixed::Fixed() : _fixedPointNumValue(0)
 }
 
 /**
- * @brief A copy constructor.
+ * @brief A copy constructor. 
+ * Cria um novo objeto como uma cópia de um objeto existente
  * @param RefConstObjSrc Como e passado este parametro com `&` o objeto
  * referenciado por &RefConstObjSrc não pode ser modificado dentro do método.
 */
@@ -35,6 +36,10 @@ Fixed::Fixed( const Fixed &RefConstObjSrc )
 /**
  * @brief A copy assignment operator overload.
  * (Sobrecarga do operador de atribuição de cópia).
+ * 
+ * O operador de atribuição de cópia é utilizado para 
+ * copiar o valor de um objeto existente para outro 
+ * objeto que já foi inicializado. 
 */
 Fixed &Fixed::operator=( const Fixed &RefConstObjSrc )
 {
