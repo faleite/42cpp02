@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 18:41:08 by faaraujo          #+#    #+#             */
-/*   Updated: 2024/06/17 16:50:29 by faaraujo         ###   ########.fr       */
+/*   Updated: 2024/06/18 17:27:31 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -197,8 +197,8 @@ Fixed Fixed::operator/( const Fixed &otherObjSrc ) const
 */
 Fixed &Fixed::operator++()
 {
-	++this->_fixedPointNumValue;
-	return (*this);
+	++this->_fixedPointNumValue; // Incrementa o valor do objeto atual.
+	return (*this); // Retorna o próprio objeto atual, com o valor incrementado.
 }
 
 /**
@@ -219,9 +219,9 @@ Fixed &Fixed::operator++()
  */
 Fixed Fixed::operator++(int)
 {
-	Fixed result(*this);
-	this->_fixedPointNumValue++; // Or operator++();
-	return (result);
+	Fixed result(*this); // Cria um objeto temporário com o valor atual.
+	this->_fixedPointNumValue++; // Incrementa o valor do objeto atual.
+	return (result); // Retorna o objeto temporário que tem o valor antigo.
 }
 
 Fixed &Fixed::operator--()
