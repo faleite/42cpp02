@@ -19,7 +19,7 @@ polymorphism, overloads and orthodox canonical classes in CPP.*
   * **[General rules](#general-rules)**
   * **[design requirements](#alguns-requisitos-de-design)**
   * **[Read me](#read-me)**
-* **[Wiki](https://github.com/faleite/42cpp00/wiki)**
+* **[Wiki](https://github.com/faleite/42cpp00/wiki/Module-III)**
 * **[Roadmap](https://faleite.github.io/cpp)**
 * **[Study resources](#study-resources)**
 <!-- * ### [Usage]() -->
